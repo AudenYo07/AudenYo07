@@ -1,0 +1,22 @@
+input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
+    randomNumber = randint(0, 4)
+    if (randomNumber == 4) {
+        basic.showString("DEFINITELY")
+    } else if (randomNumber == 3) {
+        basic.showString("MAYBE SO")
+    } else if (randomNumber == 2) {
+        basic.showString("ABSOLUTELY")
+    } else if (randomNumber == 1) {
+        basic.showString("NO WAY")
+    } else {
+        basic.showString("I DON'T HAVE A CLUE")
+    }
+    basic.showNumber(8)
+})
+let randomNumber = 0
+basic.showString("SAY A QUESTION")
+basic.showNumber(8)
+basic.forever(function () {
+	
+})
